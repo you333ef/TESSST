@@ -9,6 +9,8 @@ import FakeDommy from './components/FakeDommy';
 import SingleDommy from './components/SingleDommy';
 import SingleFake from './components/SingleFake';
 import Cart from './components/Cart';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const App = () => {
   const [dark, setDark] = useState(false);
@@ -48,6 +50,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+       <Nav dark={dark} isDark={isDark} cart={cart}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -59,6 +62,7 @@ const App = () => {
         <Route path="/singlefake/:id" element={<SingleFake />} />
         <Route path="/cart" element={<Cart cart={cart} REMOVE={REMOVE} />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

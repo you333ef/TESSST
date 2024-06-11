@@ -1,11 +1,25 @@
-import React from 'react';
+import React from 'react'
+import Head from './Head'
+import Category from './Category'
+import Trending from './Trending'
+import Banner from './Banner'
+import Ourteam from './Ourteam'
+import Popular from './Popular'
 
 const Home = () => {
   return (
     <div>
-      <h1>jooo</h1>
+<Head/>
+<Category/>
+<Trending/>
+<Banner/>
+<Ourteam/>
+<Popular/>
+
+
+
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
