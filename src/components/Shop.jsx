@@ -1,9 +1,13 @@
-import React from 'react';
-
-const Shop = () => {
+import Fake from '../components/Fake';
+import FakeDommy from '../components/FakeDommy';
+const Shop = (props) => {
   return (
     <div>
-      <h1>Shop</h1>
+<FakeDommy addToCart={props.addToCart}/>
+<Fake/>
+
+
+      
     </div>
   );
 }
