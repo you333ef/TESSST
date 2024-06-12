@@ -3,7 +3,7 @@ import './head.css';
 const Head = () => {
   return (
    <div className='container POP'>
-    <div className="row">
+     <div className="row">
       <div className="SHMAl col-lg-7 col-sm-12">
 <h2 className='SHMAL'>No restocking fee ($35 savings)</h2>
 <h3 className='SHMAL' style={{color:'black'}}>M75 Sport Watch</h3>

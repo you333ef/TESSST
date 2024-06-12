@@ -9,9 +9,9 @@ import playstation from  '../assets/images/featured-categories/fetured-item-6.pn
 const Category = () => {
   return (
     <div className='container  cateHead'>
-        <h1 className='once-cate text-center'>Featured Categories</h1>
-        <p className='twice-cate text-center'>There are many variations of passages of Lorem Ipsum available,<br/> but the majority have suffered alteration in some form.</p>
-    <div className='cate-product container'>
+    <h1 className='once-cate text-center'>Featured Categories</h1>
+    <p className='twice-cate text-center'>There are many variations of passages of Lorem Ipsum available,<br/> but the majority have suffered alteration in some form.</p>
+<div className='cate-product container'>
 <div className='row all-products'>
 
 <div className="col-lg-4 col-sm-12 Airpods">
@@ -36,11 +36,11 @@ const Category = () => {
 </div>
 <img src={Kissa} alt="" />
 
- 
+
 
 </div>
 <div className="col-lg-4 col-sm-12 handcamera">
-  <div>
+<div>
 <h3 >TV & Audios</h3>
 <h3>Smart<br/>Television</h3>
 <h3>QLED TV</h3>
@@ -59,7 +59,7 @@ const Category = () => {
 <h3>Headphones</h3>
 </div>
 <img src={camera} alt="" />
- 
+
 
 </div>
 <div className="col-lg-4 col-sm-12 mopile">
@@ -74,7 +74,7 @@ const Category = () => {
 
 </div>
 <div className="col-lg-4 col-sm-12 playstation">
-   
+
 
 <div>
 <h3 >TV & Audios</h3>
@@ -94,12 +94,12 @@ const Category = () => {
 
 
 
-    </div>
+</div>
 
 
 
 
-    </div>
+</div>
 
 
 

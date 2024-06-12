@@ -1,104 +1,114 @@
 .twiceDepartment {
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.twiceDepartment a {
+  text-decoration: none;
+  color: #0166F2;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.shop {
+  font-size: 43px; /* خلي حجم الأيقونة مناسب */
+  font-weight: 600;
+}
+
+.thirdDepartment {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heart {
+  font-size: 27px;
+}
+
+.all {
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+hr {
+  border: 1px solid #000000;
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+small {
+  padding: 0px 2px;
+  background-color: #F02124;
+  border-radius: 17px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  height: 20px;
+  position: absolute;
+  top: -16px;
+  right: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  list-style: none;
+}
+
+#bag {
+  font-size: 27px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block; /* لضمان أن العنصر .bag يعامل كصندوق محيط */
+}
+
+/* لضبط التصميم في الشاشات الصغيرة */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    display: block; /* عرض زر القائمة في الشاشات الصغيرة */
   }
-  
-  .twiceDepartment a {
-    text-decoration: none;
-    color: #0166F2;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
   .shop {
-    font-size: 45px;
-    font-weight: 600;
+    color: #000000;
   }
   
-  .thirdDepartment {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  .onceDepartment {
+    display: block; /* إخفاء onceDepartment بشكل افتراضي */
   }
   
-  .heart {
-    font-size: 27px;
+  .navbar-collapse.show .onceDepartment {
+    display: block; /* عرض onceDepartment عند فتح القائمة */
   }
-  
-  .bag {
-    font-size: 27px;
-    position: relative;
+}
+
+/* إظهار الحقيبة بغض النظر عن حجم الشاشة */
+#bag {
+  display: inline-block; /* ضمان عرض الأيقونة */
+}
+
+/* تصميم مخصص للأيقونة حسب حجم الشاشة */
+@media screen and (max-width: 767px) {
+  #bag {
+    font-size: 24px; /* حجم الأيقونة في أجهزة الجوال */
+    color: black;
   }
-  
-  .all {
-    margin-top: 15px;
-    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #bag {
+    font-size: 28px; /* حجم الأيقونة في الأجهزة اللوحية */
+    color: black;
   }
-  
-  hr {
-    border: 1px solid #000000;
+}
+
+@media screen and (min-width: 992px) {
+  #bag {
+    font-size: 32px; /* حجم الأيقونة في الأجهزة الكبيرة */
+    color: black;
   }
-  
-  small {
-    padding: 0px 2px;
-    background-color: #F02124;
-    border-radius: 17px;
-    font-weight: 600;
-    color: #fff;
-    font-size: 15px;
-    height: 20px;
-    position: absolute;
-    top: -17px;
-    right: 110px; /* adjust this value as needed */
-  }
-  
-  ul {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 20px;
-    list-style: none;
-  }
-  .bag {
-    font-size: 27px;
-    font-weight: 400;
-    position: relative;
-    display: inline-block; /* لضمان أن العنصر .bag يعامل كصندوق محيط */
-  }
-  
-  
-  /* لضبط التصميم في الشاشات الصغيرة */
-  @media (max-width: 992px) {
-    .onceDepartment {
-      display: none;
-    }
-    .thirdDepartment {
-      display: none;
-    }
-    .navbar-toggler {
-      display: block;
-    }
-    .navbar-collapse.show .onceDepartment,
-    .navbar-collapse.show .thirdDepartment {
-      display: block;
-    }
-  }
-  
-   
-  @media (max-width: 992px) {
-    .onceDepartment {
-      display: none;
-    }
-    .thirdDepartment {
-      display: none;
-    }
-    
-    .navbar-toggler {
-      display: block;
-    }
-    .navbar-collapse.show .onceDepartment,
-    .navbar-collapse.show .thirdDepartment {
-      display: block;
-    }
-  }
-  
+}

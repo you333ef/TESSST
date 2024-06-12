@@ -6,9 +6,6 @@ import trendthree from '../assets/brands/03.png'
 import trendfour from '../assets/brands/04.png'
 import trendfive from '../assets/brands/05.png'
 import trendsix from '../assets/brands/06.png'
-
-
-
 const Popular = () => {
   return (
     <div>

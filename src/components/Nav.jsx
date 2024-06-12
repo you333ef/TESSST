@@ -5,9 +5,11 @@ import { FaRegSun } from "react-icons/fa";
 import { RiShoppingBag2Fill } from "react-icons/ri";
 import { GiMoonOrbit } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+
 const Nav = ({ dark, isDark, cart }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
     <div className='container all navbar navbar-expand-lg navbar-light bg-light psps'>
       <button 
@@ -20,11 +22,10 @@ const Nav = ({ dark, isDark, cart }) => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarTogglerDemo01">
+      <div className={`${isNavCollapsed ? 'collapse' : 'show'} navbar-collapse`} id="navbarTogglerDemo01">
         <div className="onceDepartment col-lg-2 col">
-          {isNavCollapsed ? <TiShoppingCart className='shop' /> : null}
+        {isNavCollapsed ? <TiShoppingCart className='shop' /> : null}
         </div>
-
         <div className="twiceDepartment col-lg-7 col">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className='nav-item active'><Link to="/" className='nav-link'>Home</Link></li>
@@ -34,14 +35,15 @@ const Nav = ({ dark, isDark, cart }) => {
             <li className='nav-item active'><Link to="/Contact" className='nav-link'>Contact</Link></li>
           </ul>
         </div>
-
         <div className="thirdDepartment col-lg-3 col">
           <div>
             {dark ? <GiMoonOrbit className='heart' onClick={isDark} /> : <FaRegSun className='heart' onClick={isDark} />}
           </div>
           <Link to='/Cart'>
-            <RiShoppingBag2Fill className='bag' style={{ color: 'black' }} />
-            <small>{cart.length}</small>
+            <div className="cart-icon">
+              <RiShoppingBag2Fill id='bag' style={{ color: 'black' }} />
+              <small>{cart.length}</small>
+            </div>
           </Link>
         </div>
       </div>

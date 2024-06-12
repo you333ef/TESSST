@@ -92,7 +92,7 @@ const Trending  = () => {
 </div>
 <img src={blackairbods} alt="" />
 </div>
-<div className="col-lg-4 col-sm-12 Airpods">
+<div className="col-lg-4 col-sm-10 Airpods">
 <div>
 <h3 >TV & Audios</h3>
 <h3>Smart<br/>Television</h3>

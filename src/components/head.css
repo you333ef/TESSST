@@ -17,6 +17,8 @@
     width: 100%;
     background-size: cover;
     padding: 40px;
+    
+   
 }
 .show-UP{
     background-image: url('../assets/images/hero/slider-bg2.jpg');
@@ -66,4 +68,7 @@ font-size: 22px;
     letter-spacing: 1px;
     
 
+}
+.POP{
+    overflow-y: hidden;
 }
